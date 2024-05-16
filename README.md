@@ -1,6 +1,6 @@
 # ILoveDogs
 
-ILoveDogs is a full-stack application designed to provide information about various dog breeds. Users can explore details, view images, and learn about different breeds. The project aims to create an engaging platform for dog enthusiasts.
+ILoveDogs is a full-stack application (60-40) designed to provide information about various dog breeds. Users can explore details, view images, and learn about different breeds. The project aims to create an engaging platform for dog enthusiasts.
 
 ## Technologies Used
 - **Java**: Backend development using Spring Boot.
