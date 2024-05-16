@@ -2,6 +2,7 @@ package ngo.dsms.dsms.controller;
 
 import ngo.dsms.dsms.model.*;
 import ngo.dsms.dsms.repo.*;
+import ngo.dsms.dsms.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -148,6 +149,14 @@ public class MainController {
     @GetMapping(path = "/volunteers")
     public List<Volunteer> getVolunteers(){
         return volunteerRepo.findAll();
+    }
+
+    @Autowired
+    private UserService service;
+    @PostMapping(path = "/registerUser")
+    public User registerUser(@RequestBody User user){
+        service.saveUser(user);
+        return user;
     }
 
 }
